@@ -1,0 +1,10 @@
+{
+    "diagnostics.globals": [
+        "vim",
+        "null_ls",
+        "keymap"
+    ],
+    "diagnostics.disable": [
+        "redundant-value"
+    ]
+}
