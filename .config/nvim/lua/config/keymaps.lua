@@ -32,3 +32,41 @@ vim.keymap.set("n", "<leader>tx", "<cmd>tabclose<CR>", { desc = "Close current t
 -- vim.keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Go to next tab" }) --  go to next tab
 vim.keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" }) --  go to previous tab
 vim.keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab" }) --  move current buffer to new tab
+
+-- stolen from Primagen
+
+-- Move selected block down and re-indent
+vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv", { desc = "Move selected block down" })
+
+-- Move selected block up and re-indent
+vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv", { desc = "Move selected block up" })
+
+-- Join lines but keep cursor in place
+-- Default "J" moves cursor to start of joined line; this keeps it where it was
+vim.keymap.set("n", "J", "mzJ`z", { desc = "Join lines without moving cursor" })
+
+-- Half-page down but keep cursor centered
+vim.keymap.set("n", "<C-d>", "<C-d>zz", { desc = "Scroll down and center cursor" })
+
+-- Half-page up but keep cursor centered
+vim.keymap.set("n", "<C-u>", "<C-u>zz", { desc = "Scroll up and center cursor" })
+
+-- Next search result centered and unfolded
+vim.keymap.set("n", "n", "nzzzv", { desc = "Next search result centered" })
+
+-- Previous search result centered and unfolded
+vim.keymap.set("n", "N", "Nzzzv", { desc = "Prev search result centered" })
+
+-- Format a paragraph (`=ap`) but restore cursor to original position
+vim.keymap.set("n", "=ap", "ma=ap'a", { desc = "Format paragraph without losing cursor" })
+
+-- Paste over selection without overwriting unnamed register
+vim.keymap.set("x", "<leader>p", [["_dP]], { desc = "Paste without yanking replaced text" })
+
+-- Quick substitute word under cursor (global, case-insensitive, interactive)
+vim.keymap.set(
+  "n",
+  "<leader>r",
+  [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]],
+  { desc = "Substitute word under cursor" }
+)
