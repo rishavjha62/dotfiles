@@ -1,0 +1,49 @@
+# AWS News Blog
+https://aws.amazon.com/blogs/aws/feed/
+
+# Google Cloud Blog
+https://cloud.google.com/blog/topics/rss
+
+# Ardan Labs Blog
+https://www.ardanlabs.com/blog/index.xml
+
+# Slack Engineering Blog
+https://slack.engineering/feed/
+
+# go blogs https://go.dev/blog/all
+https://rss.app/feeds/ohMYbNJMkVFa1UKR.xml
+https://go.dev/blog/feed.atom
+
+# cloud.google.com
+https://rss.app/feeds/mHv10DtqNM4FtxW6.xml
+https://cloudblog.withgoogle.com/rss
+https://cloudblog.withgoogle.com/products/gcp/rss/
+https://cloud.google.com/blog/products/devops-sre
+
+# amazon
+https://aws.amazon.com/blogs/devops/feed/
+https://aws.amazon.com/blogs/aws/feed/
+
+# kubernetes
+https://kubernetes.io/feed.xml
+
+# devops
+atlassian.com/blog/devops/feed
+devops.com/feed
+docker.com/feed
+feed.infoq.com/Devops/articles
+redhat.com/en/rss/blog
+kodekloud.com/blog/rss
+https://www.dynatrace.com/news/category/devops/feed/
+
+
+# gitlab
+https://about.gitlab.com/atom.xml
+https://about.gitlab.com/all-releases.xml
+https://about.gitlab.com/security-releases.xml
+https://about.gitlab.com/releases.xml
+
+# cockroach DB engineering blogs
+https://rsshub.app/cockroachlabs/blog/engineering
+
+

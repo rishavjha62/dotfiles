@@ -1,0 +1,57 @@
+# Show article list in reverse chronological order
+# sort-order date-desc # works in 2.
+article-sort-order date-desc
+
+# Refresh feeds automatically every 30 minutes
+refresh-on-startup yes
+auto-reload yes
+reload-time 30
+
+# Open links with your browser (change to your preferred browser)
+browser "xdg-open %u"
+
+# Colors and UI tweaks
+highlight article "^(Title|Author|Date):.*" yellow default bold
+
+# Show article list in reverse chronological order
+article-sort-order date-desc
+
+# Refresh feeds automatically every 30 minutes
+refresh-on-startup yes
+auto-reload yes
+reload-time 30
+
+# Open links with your browser (change to your preferred browser)
+browser "xdg-open %u"
+
+# Colors and UI tweaks
+highlight article "^(Title|Author|Date):.*" yellow default bold
+
+# Show article list in reverse chronological order
+article-sort-order date-desc
+
+# Refresh feeds automatically every 30 minutes
+refresh-on-startup yes
+auto-reload yes
+reload-time 30
+
+# Open links with your browser (change to your preferred browser)
+browser "xdg-open %u"
+
+# Colors and UI tweaks
+highlight article "^(Title|Author|Date):.*" yellow default bold
+
+# Show article list in reverse chronological order
+article-sort-order date-desc
+
+# Refresh feeds automatically every 30 minutes
+refresh-on-startup yes
+auto-reload yes
+reload-time 30
+
+# Open links with your browser (change to your preferred browser)
+browser "xdg-open %u"
+
+# Colors and UI tweaks
+highlight article "^(Title|Author|Date):.*" yellow default bold
+
