@@ -133,3 +133,4 @@ export PATH="$PATH:/opt/nvim/"
 
 # eval "$(oh-my-posh init bash --config ~/.poshthemes/dracula.omp.json)"
 export DOCKER_HOST=unix:///var/run/docker.sock
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
