@@ -79,6 +79,6 @@ config.background = {
 }
 
 -- IMPORTANT: Sets WSL2 UBUNTU-22.04 as the defualt when opening Wezterm
-config.default_domain = "WSL:Ubuntu-22.04"
+config.default_domain = "WSL:Ubuntu-24.04"
 
 return config
