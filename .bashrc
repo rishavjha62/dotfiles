@@ -95,6 +95,7 @@ alias l='ls -CF'
 alias vim='nvim'
 alias vi='nvim'
 alias nv='nvim'
+alias k ='kubectl'
 
 # for  obsidian
 alias oo='cd ~/programming/my-notes'
@@ -134,3 +135,5 @@ export PATH="$PATH:/opt/nvim/"
 # eval "$(oh-my-posh init bash --config ~/.poshthemes/dracula.omp.json)"
 export DOCKER_HOST=unix:///var/run/docker.sock
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+complete -C /usr/bin/terraform terraform
