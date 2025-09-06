@@ -76,3 +76,11 @@ vim.keymap.set(
 )
 -- delete file in current buffer
 vim.keymap.set("n", "<leader>odd", ":!rm '%:p'<cr>:bd<cr>", { desc = "Delete File in current buffer" })
+
+-- Added for .tf terraform files
+vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
+  pattern = "*.tf",
+  callback = function()
+    vim.bo.filetype = "terraform"
+  end,
+})
