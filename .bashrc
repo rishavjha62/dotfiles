@@ -95,7 +95,7 @@ alias l='ls -CF'
 alias vim='nvim'
 alias vi='nvim'
 alias nv='nvim'
-alias k ='kubectl'
+alias k='kubectl'
 
 # for  obsidian
 alias oo='cd ~/programming/my-notes'
