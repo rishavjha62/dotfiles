@@ -138,6 +138,10 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 complete -C /usr/bin/terraform terraform
 
+# for auto-completion for kubectl commands
+complete -o default -F __start_kubectl k
+source <(kubectl completion bash)
+
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/home/risjha/google-cloud-sdk/path.bash.inc' ]; then . '/home/risjha/google-cloud-sdk/path.bash.inc'; fi
 
