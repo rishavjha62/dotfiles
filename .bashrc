@@ -136,11 +136,15 @@ export PATH="$PATH:/opt/nvim/"
 export DOCKER_HOST=unix:///var/run/docker.sock
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
+# terraform auto-completion
 complete -C /usr/bin/terraform terraform
 
 # for auto-completion for kubectl commands
 complete -o default -F __start_kubectl k
 source <(kubectl completion bash)
+
+# for argocd cli auto-completion
+source <(argocd completion bash)
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/home/risjha/google-cloud-sdk/path.bash.inc' ]; then . '/home/risjha/google-cloud-sdk/path.bash.inc'; fi
