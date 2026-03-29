@@ -10,9 +10,9 @@ vim.keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
 vim.keymap.set("n", "<leader>nh", "<cmd>nohlsearch<CR>", { desc = "Remove Highlights" })
 
 -- buffers
-vim.keymap.set("n", "<leader>n", "<cmd>bn<CR>", { desc = "Jumpt to next buffer" })
-vim.keymap.set("n", "<leader>p", "<cmd>bp<CR>", { desc = "Jumpt to previous buffer" })
-vim.keymap.set("n", "<leader>x", "<cmd>bd<CR>", { desc = "Close current buffer" })
+vim.keymap.set("n", "<leader>bn", "<cmd>bn<CR>", { desc = "Jumpt to next buffer" })
+vim.keymap.set("n", "<leader>bp", "<cmd>bp<CR>", { desc = "Jumpt to previous buffer" })
+vim.keymap.set("n", "<leader>bd", "<cmd>bd<CR>", { desc = "Close current buffer" })
 
 -- yank to clipboard
 vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]], { desc = "Yank to system clipboard" })

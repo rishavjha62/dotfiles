@@ -78,9 +78,44 @@ vim.keymap.set(
 vim.keymap.set("n", "<leader>odd", ":!rm '%:p'<cr>:bd<cr>", { desc = "Delete File in current buffer" })
 
 -- Added for .tf terraform files
-vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
-  pattern = "*.tf",
+-- vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
+--   pattern = "*.tf",
+--   callback = function()
+--     vim.bo.filetype = "terraform"
+--   end,
+-- })
+
+--Highlight text for some time after yanking
+vim.api.nvim_create_autocmd("TextYankPost", {
+  group = vim.api.nvim_create_augroup("YankHighlight", { clear = true }),
+  pattern = "*",
   callback = function()
-    vim.bo.filetype = "terraform"
+    vim.highlight.on_yank()
+  end,
+  desc = "Highlight yank",
+})
+
+-- For Tranparency:
+vim.api.nvim_create_autocmd("ColorScheme", {
+  callback = function()
+    local groups = {
+      "Normal",
+      "NormalNC",
+      "NormalFloat",
+      "SignColumn",
+      "EndOfBuffer",
+      "MsgArea",
+      "FloatBorder",
+    }
+
+    for _, group in ipairs(groups) do
+      local ok, hl = pcall(vim.api.nvim_get_hl, 0, { name = group })
+      if ok then
+        vim.api.nvim_set_hl(0, group, {
+          fg = hl.fg,
+          bg = "none",
+        })
+      end
+    end
   end,
 })

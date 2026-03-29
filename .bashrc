@@ -152,3 +152,4 @@ if [ -f '/home/risjha/google-cloud-sdk/path.bash.inc' ]; then . '/home/risjha/go
 # The next line enables shell command completion for gcloud.
 if [ -f '/home/risjha/google-cloud-sdk/completion.bash.inc' ]; then . '/home/risjha/google-cloud-sdk/completion.bash.inc'; fi
 export EDITOR=nvim
+. "$HOME/.cargo/env"

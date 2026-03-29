@@ -33,3 +33,4 @@ export PATH="$PATH:/opt/nvim/"
 export PATH="$PATH:/usr/local/go/bin"
 
 eval "$(oh-my-posh init bash --config ~/.poshthemes/my-dracula.omp.json)"
+. "$HOME/.cargo/env"

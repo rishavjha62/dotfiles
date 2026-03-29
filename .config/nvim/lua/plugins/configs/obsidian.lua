@@ -18,5 +18,5 @@ return {
     ["<leader>ti"] = { action = util.toggle_checkbox, opts = { buffer = true } },
   },
   completion = { nvim_cmp = false, blink = true, min_chars = 2 },
-  ui = { enable = false },
+  ui = { enable = true },
 }
