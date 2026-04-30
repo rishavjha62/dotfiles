@@ -68,14 +68,6 @@ vim.opt.breakindent = true
 --   virtual_line = false,
 -- })
 
---to allow UI features from /lua/plugin/obsidian.nvim
-vim.api.nvim_create_autocmd("FileType", {
-  pattern = "markdown",
-  callback = function()
-    vim.opt_local.conceallevel = 2
-  end,
-})
-
 -- for adding borders to window
 vim.opt.winborder = "rounded"
 
