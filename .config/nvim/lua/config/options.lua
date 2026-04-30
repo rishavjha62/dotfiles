@@ -83,7 +83,3 @@ vim.opt.winborder = "rounded"
 vim.opt.runtimepath:append(vim.fn.stdpath("data") .. "/site")
 
 vim.lsp.set_log_level("error")
-
-vim.keymap.set("n", "<A-j>", ":m .+1<CR> == ", { desc = "Move line down" })
-vim.keymap.set("n", "<C-Left>", ":vertical resize -2<CR>", { desc = "Decrease window width" })
-vim.keymap.set("n", "<C-Right>", ":vertical resize +2<CR>", { desc = "Increase window width" })
