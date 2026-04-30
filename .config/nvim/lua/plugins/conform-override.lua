@@ -5,6 +5,7 @@ return {
       lua = { "stylua" },
       python = { "ruff_format" },
       go = { "gofumpt", "goimports" },
+      sql = { "sqlfluff" },
       ["_"] = { "prettier" },
     },
   },
